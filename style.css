@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1.glitch {
+  font-size: 3rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  text-align: center;
+  margin-top: 2rem;
+  animation: glitch 1.5s infinite;
+}
+
+.tagline {
+  text-align: center;
+  color: #ff00ff;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+nav {
+  background: #111;
+  padding: 10px 0;
+  border-bottom: 1px solid #0ff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #0ff;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff00ff;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #0ff;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px #0ff60a;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #ff00ff;
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  color: #888;
+  border-top: 1px solid #0ff;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+#certifications {
+  padding: 4rem 2rem;
+  background-color: #0a0a0a; /* Same as body background */
+  color: #f0f0f0;
+}
+
+#certifications h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.cert-card {
+  background-color: #111; /* Match other .card elements */
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0ff60a;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border: 1px solid #0ff;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+  border-color: #ff00ff;
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #0ff;
+}
+
+.cert-card h3 {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 0;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  border-top: 1px solid #333;
+}
+
